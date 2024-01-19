@@ -1,8 +1,8 @@
 package software.ulpgc.moneyCalculator.mocks;
 
-import software.ulpgc.moneycalculator.Currency;
-import software.ulpgc.moneycalculator.ExchangeRate;
-import software.ulpgc.moneycalculator.ExchangeRateLoader;
+import software.ulpgc.moneyCalculator.Currency;
+import software.ulpgc.moneyCalculator.ExchangeRate;
+import software.ulpgc.moneyCalculator.ExchangeRateLoader;
 
 import java.time.LocalDate;
 
