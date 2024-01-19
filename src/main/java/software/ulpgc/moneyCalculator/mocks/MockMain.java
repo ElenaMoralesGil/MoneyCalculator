@@ -1,7 +1,6 @@
 package software.ulpgc.moneyCalculator.mocks;
 
 
-
 import software.ulpgc.moneyCalculator.*;
 
 import java.util.List;

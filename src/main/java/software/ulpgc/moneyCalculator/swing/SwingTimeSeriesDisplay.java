@@ -63,4 +63,5 @@ public class SwingTimeSeriesDisplay extends JPanel implements TimeSeriesDisplay 
         axis.setVerticalTickLabels(true);
 
         return chart;
-    }}
+    }
+}

@@ -1,8 +1,6 @@
 package software.ulpgc.moneyCalculator.swing;
 
 
-
-
 import software.ulpgc.moneyCalculator.Currency;
 import software.ulpgc.moneyCalculator.CurrencyDialog;
 

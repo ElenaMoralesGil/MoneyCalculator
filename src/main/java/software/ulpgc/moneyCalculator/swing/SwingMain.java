@@ -18,6 +18,17 @@ public class SwingMain extends JFrame {
     private MoneyDialog moneyDialog;
     private CurrencyDialog currencyDialog;
 
+    public SwingMain() throws HeadlessException {
+        setTitle("MoneyCalculator");
+        setSize(800, 200);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLayout(new FlowLayout());
+        this.add(createMoneyDialog());
+        this.add(createCurrencyDialog());
+        this.add(createMoneyDisplay());
+        this.add(toolbar());
+    }
+
     public static void main(String[] args) {
 
         SwingMain main = new SwingMain();
@@ -31,17 +42,6 @@ public class SwingMain extends JFrame {
         main.setVisible(true);
     }
 
-    public SwingMain() throws HeadlessException {
-        setTitle("MoneyCalculator");
-        setSize(800, 200);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new FlowLayout());
-        this.add(createMoneyDialog());
-        this.add(createCurrencyDialog());
-        this.add(createMoneyDisplay());
-        this.add(toolbar());
-    }
-
     private Component toolbar() {
         JButton button = new JButton("calculate");
         button.setFont(new Font("Serif", Font.BOLD, 16));
@@ -50,11 +50,13 @@ public class SwingMain extends JFrame {
         button.addActionListener(e -> commands.get("exchange money").execute());
         return button;
     }
+
     private Component createTimeSeriesDisplay() {
         SwingTimeSeriesDisplay display = new SwingTimeSeriesDisplay();
         this.timeSeriesDisplay = display;
         return display;
     }
+
     private Component createMoneyDisplay() {
         SwingMoneyDisplay display = new SwingMoneyDisplay();
         this.moneyDisplay = display;
@@ -78,8 +80,9 @@ public class SwingMain extends JFrame {
     }
 
     private TimeSeriesDisplay timeSeriesDisplay() {
-    return timeSeriesDisplay;
+        return timeSeriesDisplay;
     }
+
     private MoneyDisplay moneyDisplay() {
         return moneyDisplay;
     }

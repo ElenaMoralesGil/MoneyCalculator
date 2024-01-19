@@ -13,7 +13,7 @@ public class SparkMain {
         Spark.get("/", (req, res) -> {
             FixerCurrencyLoader currencyLoader = new FixerCurrencyLoader();
             List<Currency> currencies = currencyLoader.load();
-            currencies.add(new Currency("EUR","Euro"));
+            currencies.add(new Currency("EUR", "Euro"));
             StringBuilder currencyOptions = new StringBuilder();
             for (Currency currency : currencies) {
                 currencyOptions.append("<option value=\"")
@@ -31,10 +31,10 @@ public class SparkMain {
                     "    <h1>Money Exchange Calculator</h1>" +
                     "    <form action=\"/calculate\" method=\"post\">" +
                     "      From Currency: <select name=\"fromCurrency\">" +
-                    currencyOptions.toString() +
+                    currencyOptions +
                     "      </select><br>" +
                     "      To Currency: <select name=\"toCurrency\">" +
-                    currencyOptions.toString() +
+                    currencyOptions +
                     "      </select><br>" +
                     "      Amount: <input type=\"number\" name=\"amount\" step=\"0.01\"><br>" +
                     "      <input type=\"submit\" value=\"Calculate\">" +
