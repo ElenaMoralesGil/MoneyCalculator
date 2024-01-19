@@ -1,10 +1,10 @@
 package software.ulpgc.moneyCalculator.swing;
 
 
-import software.ulpgc.moneycalculator.Currency;
-import software.ulpgc.moneycalculator.CurrencyDialog;
-import software.ulpgc.moneycalculator.Money;
-import software.ulpgc.moneycalculator.MoneyDialog;
+import software.ulpgc.moneyCalculator.Currency;
+import software.ulpgc.moneyCalculator.CurrencyDialog;
+import software.ulpgc.moneyCalculator.Money;
+import software.ulpgc.moneyCalculator.MoneyDialog;
 
 import javax.swing.*;
 import java.awt.*;

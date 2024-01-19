@@ -9,8 +9,8 @@ import org.jfree.chart.renderer.xy.XYBarRenderer;
 import org.jfree.chart.renderer.xy.XYItemRenderer;
 import org.jfree.data.time.Day;
 import org.jfree.data.time.TimeSeriesCollection;
-import software.ulpgc.moneycalculator.TimeSeries;
-import software.ulpgc.moneycalculator.TimeSeriesDisplay;
+import software.ulpgc.moneyCalculator.TimeSeries;
+import software.ulpgc.moneyCalculator.TimeSeriesDisplay;
 
 import javax.swing.*;
 import java.awt.*;

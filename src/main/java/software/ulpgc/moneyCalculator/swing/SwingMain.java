@@ -1,9 +1,9 @@
 package software.ulpgc.moneyCalculator.swing;
 
 
-import software.ulpgc.moneycalculator.*;
-import software.ulpgc.moneycalculator.fixerws.FixerCurrencyLoader;
-import software.ulpgc.moneycalculator.fixerws.FixerExchangeRateLoader;
+import software.ulpgc.moneyCalculator.*;
+import software.ulpgc.moneyCalculator.fixerws.FixerCurrencyLoader;
+import software.ulpgc.moneyCalculator.fixerws.FixerExchangeRateLoader;
 
 import javax.swing.*;
 import java.awt.*;
