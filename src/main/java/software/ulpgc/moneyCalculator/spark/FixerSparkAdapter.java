@@ -1,8 +1,8 @@
 package software.ulpgc.moneyCalculator.spark;
 
-import software.ulpgc.moneycalculator.Currency;
-import software.ulpgc.moneycalculator.ExchangeRate;
-import software.ulpgc.moneycalculator.fixerws.FixerExchangeRateLoader;
+import software.ulpgc.moneyCalculator.Currency;
+import software.ulpgc.moneyCalculator.ExchangeRate;
+import software.ulpgc.moneyCalculator.fixerws.FixerExchangeRateLoader;
 
 public class FixerSparkAdapter implements SparkAdapter {
 
